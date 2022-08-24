@@ -1,4 +1,5 @@
 from random import choice, shuffle
+import pyperclip
 
 numeros = '0123456789'
 letras_minusculas = 'abcdefghijklmnopqrstuvwxyz'
@@ -42,4 +43,10 @@ for pos in lista_pos:
 
     possiveis_caracteres.pop(0)
 
-print(''.join(senha))
+senha = ''.join(senha)
+
+print(senha)
+
+pyperclip.copy(senha)
+
+print('Copiado para a area de transferencia.')
